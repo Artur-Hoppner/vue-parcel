@@ -1,0 +1,27 @@
+{
+  "name": "vue-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "app.vue": "^0.1.10",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vuex": "^3.5.1"
+  },
+  "scripts": {
+    "serve": "NODE_ENV=development parcel index.html --no-cache",
+    "build": "NODE_ENV=production parcel index.html --no-cache"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@vue/component-compiler-utils": "^3.2.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.4.2",
+    "parcel-bundler": "^1.12.4",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "author": "",
+  "license": "ISC"
+}
