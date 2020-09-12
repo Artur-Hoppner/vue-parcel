@@ -1,9 +1,10 @@
 <template>
   <div>
     <h1>show GIF</h1>
-    <h1 v-if="(getItRight = true)">
-      fuck it works. Good job 100%
+    <h1 v-if="development">
+      development
     </h1>
+    <h1 v-if="production">production</h1>
   </div>
 </template>
 
@@ -13,7 +14,12 @@ export default {
     console.log(process.env.NODE_ENV);
   },
   computed: {
-    getItRight() {
+    development() {
+      if (process.env.NODE_ENV == "development") {
+        return true;
+      }
+    },
+    production() {
       if (process.env.NODE_ENV == "production") {
         return true;
       }
